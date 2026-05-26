@@ -5,9 +5,15 @@
       "command": "npx",
       "args": [
         "-y",
-        "@playwright/mcp@0.0.37"
+        "@playwright/mcp@0.0.37",
+        "--browser",
+        "chromium",
+        "--executable-path",
+        "/home/okzie/.playwright/chromium-1223/chrome-linux64/chrome"
       ],
-      "env": {}
+      "env": {
+        "PLAYWRIGHT_BROWSERS_PATH": "/home/okzie/.playwright"
+      }
     },
     "github": {
       "type": "stdio",
